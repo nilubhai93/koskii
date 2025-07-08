@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koskii - Premium Indian Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            LIMITED TIME: SHOP ₹5999+ & GET EXTRA 10% OFF INSTANTLY! Use Code: KOSKIILUV10
+        </div>
+    </div>
+
+    <!-- App Banner -->
+    <div class="app-banner">
+        <div class="container">
+            EXCLUSIVE: FIRST APP ORDER? ENJOY 15% OFF ON ₹7999 - Tap to download now!
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Mart</a>
+
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search For Items...">
+                    </div>
+                </div>
+
+                <div class="header-icons">
+                    <a href="#" title="Wishlist" class="wishlist-icon">♡</a>
+                    <a href="#" title="Profile" class="profile-icon">👤</a>
+                    <a href="#" title="Cart" class="cart-icon">
+                        🛒
+                        <span class="cart-badge">3</span>
+                    </a>
+                </div>
+
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-logo">Mart</div>
+            <button class="close-menu" id="closeMenu">×</button>
+        </div>
+        <ul class="mobile-menu-items">
+            <li><a href="#"><span>♡</span>Wishlist</a></li>
+            <li><a href="#"><span>👤</span>Profile</a></li>
+            <li><a href="#"><span>🏠</span>Home</a></li>
+            <li><a href="#"><span>🛍️</span>Categories</a></li>
+            <li><a href="#"><span>🎯</span>Deals</a></li>
+            <li><a href="#"><span>📞</span>Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li>
+                    <a href="#sale">Sale</a>
+                    <div class="popup-menu">
+                        <div class="menu-column">
+                            <h4>By Offer</h4>
+                            <a href="#">Buy 2 Get 25% | Buy 3+ Get 30%</a>
+                            <a href="#">Silk Sarees @ Flat 30% Off</a>
+                            <a href="#">Salwar Suits Under 2999</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Discount</h4>
+                            <a href="#">Flat 50% Off</a>
+                            <a href="#">Flat 40% Off</a>
+                            <a href="#">Flat 35% Off</a>
+                            <a href="#">Flat 30% Off</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Category</h4>
+                            <a href="#">Sarees</a>
+                            <a href="#">Dress Materials</a>
+                            <a href="#">Salwar Suits</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#sarees">Sarees</a>
+                    <div class="popup-menu">
+                        <div class="menu-column">
+                            <h4>By Offer</h4>
+                            <a href="#">Buy 2 Get 25% | Buy 3+ Get 30%</a>
+                            <a href="#">Silk Sarees @ Flat 30% Off</a>
+                            <a href="#">Salwar Suits Under 2999</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Discount</h4>
+                            <a href="#">Flat 50% Off</a>
+                            <a href="#">Flat 40% Off</a>
+                            <a href="#">Flat 35% Off</a>
+                            <a href="#">Flat 30% Off</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Category</h4>
+                            <a href="#">Sarees</a>
+                            <a href="#">Dress Materials</a>
+                            <a href="#">Salwar Suits</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#dress-materials">Dress Materials</a>
+                    <div class="popup-menu">
+                        <div class="menu-column">
+                            <h4>By Offer</h4>
+                            <a href="#">Buy 2 Get 25% | Buy 3+ Get 30%</a>
+                            <a href="#">Silk Sarees @ Flat 30% Off</a>
+                            <a href="#">Salwar Suits Under 2999</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Discount</h4>
+                            <a href="#">Flat 50% Off</a>
+                            <a href="#">Flat 40% Off</a>
+                            <a href="#">Flat 35% Off</a>
+                            <a href="#">Flat 30% Off</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Category</h4>
+                            <a href="#">Sarees</a>
+                            <a href="#">Dress Materials</a>
+                            <a href="#">Salwar Suits</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#salwar-suits">Salwar Suits</a>
+                    <div class="popup-menu">
+                        <div class="menu-column">
+                            <h4>By Offer</h4>
+                            <a href="#">Buy 2 Get 25% | Buy 3+ Get 30%</a>
+                            <a href="#">Silk Sarees @ Flat 30% Off</a>
+                            <a href="#">Salwar Suits Under 2999</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Discount</h4>
+                            <a href="#">Flat 50% Off</a>
+                            <a href="#">Flat 40% Off</a>
+                            <a href="#">Flat 35% Off</a>
+                            <a href="#">Flat 30% Off</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Category</h4>
+                            <a href="#">Sarees</a>
+                            <a href="#">Dress Materials</a>
+                            <a href="#">Salwar Suits</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#lehengas">Lehengas</a>
+                    <div class="popup-menu">
+                        <div class="menu-column">
+                            <h4>By Offer</h4>
+                            <a href="#">Buy 2 Get 25% | Buy 3+ Get 30%</a>
+                            <a href="#">Silk Sarees @ Flat 30% Off</a>
+                            <a href="#">Salwar Suits Under 2999</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Discount</h4>
+                            <a href="#">Flat 50% Off</a>
+                            <a href="#">Flat 40% Off</a>
+                            <a href="#">Flat 35% Off</a>
+                            <a href="#">Flat 30% Off</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Category</h4>
+                            <a href="#">Sarees</a>
+                            <a href="#">Dress Materials</a>
+                            <a href="#">Salwar Suits</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#others">Others</a>
+                    <div class="popup-menu">
+                        <div class="menu-column">
+                            <h4>By Offer</h4>
+                            <a href="#">Buy 2 Get 25% | Buy 3+ Get 30%</a>
+                            <a href="#">Silk Sarees @ Flat 30% Off</a>
+                            <a href="#">Salwar Suits Under 2999</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Discount</h4>
+                            <a href="#">Flat 50% Off</a>
+                            <a href="#">Flat 40% Off</a>
+                            <a href="#">Flat 35% Off</a>
+                            <a href="#">Flat 30% Off</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Category</h4>
+                            <a href="#">Sarees</a>
+                            <a href="#">Dress Materials</a>
+                            <a href="#">Salwar Suits</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#new-arrivals">New Arrivals</a>
+                    <div class="popup-menu">
+                        <div class="menu-column">
+                            <h4>By Offer</h4>
+                            <a href="#">Buy 2 Get 25% | Buy 3+ Get 30%</a>
+                            <a href="#">Silk Sarees @ Flat 30% Off</a>
+                            <a href="#">Salwar Suits Under 2999</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Discount</h4>
+                            <a href="#">Flat 50% Off</a>
+                            <a href="#">Flat 40% Off</a>
+                            <a href="#">Flat 35% Off</a>
+                            <a href="#">Flat 30% Off</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Category</h4>
+                            <a href="#">Sarees</a>
+                            <a href="#">Dress Materials</a>
+                            <a href="#">Salwar Suits</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="#occasions">Occasions</a>
+                    <div class="popup-menu">
+                        <div class="menu-column">
+                            <h4>By Offer</h4>
+                            <a href="#">Buy 2 Get 25% | Buy 3+ Get 30%</a>
+                            <a href="#">Silk Sarees @ Flat 30% Off</a>
+                            <a href="#">Salwar Suits Under 2999</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Discount</h4>
+                            <a href="#">Flat 50% Off</a>
+                            <a href="#">Flat 40% Off</a>
+                            <a href="#">Flat 35% Off</a>
+                            <a href="#">Flat 30% Off</a>
+                        </div>
+                        <div class="menu-column">
+                            <h4>By Category</h4>
+                            <a href="#">Sarees</a>
+                            <a href="#">Dress Materials</a>
+                            <a href="#">Salwar Suits</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Buy More, Save More!</h1>
+                <div class="hero-offers">
+                    <div class="offer-item">
+                        <h3>BUY 1</h3>
+                        <div class="discount">20% OFF</div>
+                    </div>
+                    <div class="offer-item">
+                        <h3>BUY 2</h3>
+                        <div class="discount">25% OFF</div>
+                    </div>
+                    <div class="offer-item">
+                        <h3>BUY 3</h3>
+                        <div class="discount">30% OFF</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sale Filters -->
+    <section class="sale-filters">
+        <div class="container">
+            <div class="filter-grid">
+                <div class="filter-section">
+                    <h3>By Offer</h3>
+                    <ul>
+                        <li>BUY 2 GET 25% | BUY 3+ GET 30%</li>
+                        <li>Silk SAREES @ FLAT 30% OFF</li>
+                        <li>SALWAR SUITS UNDER 2999</li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h3>By Discount</h3>
+                    <ul>
+                        <li>FLAT 50% OFF</li>
+                        <li>FLAT 40% OFF</li>
+                        <li>FLAT 35% OFF</li>
+                        <li>FLAT 30% OFF</li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h3>By Category</h3>
+                    <ul>
+                        <li>SAREES</li>
+                        <li>DRESS MATERIALS</li>
+                        <li>SALWAR SUITS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">BESTSELLERS</h2>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div class="sale-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Onion Pink Threadwork Tissue Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 2,694</span>
+                            <span class="original-price">₹ 4,490</span>
+                            <span class="discount">40% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div class="sale-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Onion Pink Zariwork Soft Silk Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 1,743</span>
+                            <span class="original-price">₹ 2,490</span>
+                            <span class="discount">30% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div class="sale-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Dark Maroon Zariwork Tissue Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 5,992</span>
+                            <span class="original-price">₹ 7,490</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div class="sale-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Onion Pink Sequins Raw Silk Salwar Suit</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 1,995</span>
+                            <span class="original-price">₹ 3,990</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div class="sale-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wine Threadwork Crepe Readymade Salwar Suit</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 1,995</span>
+                            <span class="original-price">₹ 3,990</span>
+                            <span class="discount">50% off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekend Surprise Banner -->
+    <section class="special-banner">
+        <div class="container">
+            <h2>WEEKEND Surprise</h2>
+            <div class="offer-text">MINIMUM 30% OFF</div>
+            <div style="font-size: 1.2rem; margin-bottom: 30px;">LEHENGAS | GOWNS</div>
+            <button class="cta-button">SHOP NOW</button>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">NEW ARRIVALS - SAREES</h2>
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div class="sale-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mustard Printed Satin Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 2,392</span>
+                            <span class="original-price">₹ 2,990</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div class="sale-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wine Gold Zariwork Soft Raw Silk Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 2,792</span>
+                            <span class="original-price">₹ 3,490</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div class="sale-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Rani Pink Kashmiri Georgette Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 5,592</span>
+                            <span class="original-price">₹ 6,990</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div class="sale-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">White Printed Satin Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 3,592</span>
+                            <span class="original-price">₹ 4,490</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <div class="sale-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Rani Pink Gold Zariwork Soft Raw Silk Saree</h3>
+                        <div class="product-rating">★★★★★</div>
+                        <div class="product-price">
+                            <span class="current-price">₹ 2,392</span>
+                            <span class="original-price">₹ 2,990</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pure Silk Sarees Banner -->
+    <section class="special-banner" style="background: linear-gradient(135deg, #FF8C00, #FF6347);">
+        <div class="container">
+            <h2>Magic In Motifs</h2>
+            <div style="font-size: 1.5rem; margin-bottom: 30px;">PURE SILK SAREES</div>
+            <button class="cta-button">SHOP NOW</button>
+        </div>
+    </section>
+
+    <!-- Exclusive Offers -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">EXCLUSIVE OFFERS FOR YOU</h2>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="collection-image"></div>
+                    <div class="collection-info">
+                        <h3 class="collection-title">Dreamy Drapes</h3>
+                        <p class="collection-desc">UNDER ₹3999</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image"></div>
+                    <div class="collection-info">
+                        <h3 class="collection-title">Ready Made Sets</h3>
+                        <p class="collection-desc">FLAT 30% - 50%</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image"></div>
+                    <div class="collection-info">
+                        <h3 class="collection-title">Dress Materials</h3>
+                        <p class="collection-desc">FLAT 20%-30% OFF</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <div class="collection-info">
+                            <h3 class="collection-title">Lehengas</h3>
+                            <p class="collection-desc">MINIMUM 30% OFF</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Trending Collections -->
+    <section class="collections" style="background: linear-gradient(135deg, #f9f9f9, #f0f0f0);">
+        <div class="container">
+            <h2 class="section-title">TRENDING COLLECTIONS</h2>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="collection-image" style="background: linear-gradient(135deg, #FFB6C1, #FF69B4);"></div>
+                    <div class="collection-info">
+                        <h3 class="collection-title">Festive Sarees</h3>
+                        <p class="collection-desc">Premium silk collection</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image" style="background: linear-gradient(135deg, #DDA0DD, #9370DB);"></div>
+                    <div class="collection-info">
+                        <h3 class="collection-title">Wedding Lehengas</h3>
+                        <p class="collection-desc">Bridal special collection</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image" style="background: linear-gradient(135deg, #F0E68C, #DAA520);"></div>
+                    <div class="collection-info">
+                        <h3 class="collection-title">Party Wear</h3>
+                        <p class="collection-desc">Glamorous evening wear</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-image" style="background: linear-gradient(135deg, #98FB98, #32CD32);"></div>
+                    <div class="collection-info">
+                        <h3 class="collection-title">Casual Comfort</h3>
+                        <p class="collection-desc">Everyday elegance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download Section -->
+    <section class="app-download">
+        <div class="container">
+            <h2>Download Our App</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 20px;">Get exclusive app-only deals and offers</p>
+            <div class="offer">15% OFF</div>
+            <p style="margin-bottom: 30px;">On your first app purchase above ₹7999</p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <button class="cta-button"
+                    style="background: black; color: white; display: flex; align-items: center; gap: 10px;">
+                    <span>📱</span> Download for iOS
+                </button>
+                <button class="cta-button"
+                    style="background: #00C851; color: white; display: flex; align-items: center; gap: 10px;">
+                    <span>📱</span> Download for Android
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="heronew" id="home">
+        <div class="hero-content">
+            <h1>Exquisite Indian Fashion</h1>
+            <p>Discover our premium collection of sarees, lehengas, and ethnic wear crafted with perfection</p>
+            <a href="#collections" class="cta-button">Explore Collections</a>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections" id="collections">
+        <h2 class="section-title">SHOP BY COLLECTION</h2>
+        <div class="collections-grid">
+            <div class="collection-card">
+                <div class="collection-image" style="background: linear-gradient(45deg, #ffc0cb, #ffb6c1);">
+                    <span>Perfect Pastels</span>
+                </div>
+                <div class="collection-content">
+                    <h3 class="collection-title">Perfect Pastels</h3>
+                    <p class="collection-description">Soft, elegant pastels for every occasion</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image" style="background: linear-gradient(45deg, #1e3c72, #2a5298);">
+                    <span>Gorgeous in Georgette</span>
+                </div>
+                <div class="collection-content">
+                    <h3 class="collection-title">Gorgeous in Georgette</h3>
+                    <p class="collection-description">Luxurious georgette sarees with intricate designs</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image" style="background: linear-gradient(45deg, #434343, #000000);">
+                    <span>Ready to Party</span>
+                </div>
+                <div class="collection-content">
+                    <h3 class="collection-title">Ready to Party</h3>
+                    <p class="collection-description">Glamorous party wear for special celebrations</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image" style="background: linear-gradient(45deg, #ff6b6b, #ffd93d);">
+                    <span>Banarasi Beauty</span>
+                </div>
+                <div class="collection-content">
+                    <h3 class="collection-title">Banarasi Beauty</h3>
+                    <p class="collection-description">Traditional Banarasi sarees with timeless elegance</p>
+                    <a href="#" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Experience Section -->
+    <section class="store-experience" id="stores">
+        <div class="store-content">
+            <h2>Experience Our Stores</h2>
+            <p>Visit our premium stores to feel the luxury and craftsmanship of our collections. Our expert stylists are
+                ready to help you find the perfect outfit for any occasion.</p>
+            <a href="#" class="cta-button">Visit Us</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <h2 class="section-title">SHOP BY CATEGORY</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <h3>Sarees</h3>
+                <p>Traditional and contemporary sarees</p>
+            </div>
+            <div class="category-card">
+                <h3>Lehengas</h3>
+                <p>Bridal and party lehengas</p>
+            </div>
+            <div class="category-card">
+                <h3>Salwar Suits</h3>
+                <p>Elegant salwar kameez sets</p>
+            </div>
+            <div class="category-card">
+                <h3>Gowns</h3>
+                <p>Indo-western fusion gowns</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="section-title">CUSTOMER TESTIMONIALS</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="customer-image">D</div>
+                <div class="customer-name">Diksha Chalke</div>
+                <p class="testimonial-text">"Koskii's Sari elevated my Haldi look, instilling confidence and style. The
+                    unmatched quality and attention to detail in their designs made me feel my best. Grateful for a
+                    memorable day!"</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="customer-image">S</div>
+                <div class="customer-name">Shruti Das</div>
+                <p class="testimonial-text">"This lehenga is beautiful & also easy to wear. I wore this for my friend's
+                    sister's wedding & received so many compliments. Koskii has been my go-to for every special
+                    occasion."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="customer-image">A</div>
+                <div class="customer-name">Aparna Gaur</div>
+                <p class="testimonial-text">"Thank you, Koskii, for the beautiful lehenga! I absolutely loved it and
+                    received so many compliments. The design and fit were perfect - truly made my day special."</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="customer-image">J</div>
+                <div class="customer-name">Joys Maria Joseph</div>
+                <p class="testimonial-text">"I chose Koskii's Saree for my engagement outfit and am really happy about
+                    it. Received many compliments for the look and many asked me where I got it from. Will surely
+                    recommend Koskii."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Size Chart</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>About Koskii</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Stores</a></li>
+                    <li><a href="#">Franchise</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Popular Searches</h3>
+                <ul>
+                    <li><a href="#">Bridal Gowns</a></li>
+                    <li><a href="#">Silk Sarees</a></li>
+                    <li><a href="#">Party Lehengas</a></li>
+                    <li><a href="#">Designer Suits</a></li>
+                    <li><a href="#">Ethnic Wear</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Sign Up and Save</h3>
+                <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+                <div class="email-signup">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Koskii All Rights Reserved. | Powered by Premium Fashion</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Floating WhatsApp Button -->
+    <div
+        style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); cursor: pointer; z-index: 1000; font-size: 24px;">
+        💬
+    </div>
+
+    <!-- Back to Top Button -->
+    <div id="backToTop"
+        style="position: fixed; bottom: 90px; right: 20px; background: #8B4513; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; opacity: 0; transition: opacity 0.3s; z-index: 1000;">
+        ↑
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
