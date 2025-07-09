@@ -28,7 +28,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="/index.html" class="logo" onclick="scrollToTop()">Mart</a>
-     
+
 
                 <div class="search-container">
                     <div class="search-bar">
@@ -38,8 +38,8 @@
 
                 <div class="header-icons">
                     <a href="#" title="Wishlist" class="wishlist-icon">♡</a>
-                    <a href="#" title="Profile" class="profile-icon">👤</a>
-                    <a href="#" title="Cart" class="cart-icon">
+                    <a href="./profile/profile.html" title="Profile" class="profile-icon">👤</a>
+                    <a href="./cart/cart.html" title="Cart" class="cart-icon">
                         🛒
                         <span class="cart-badge">3</span>
                     </a>
@@ -273,7 +273,10 @@
 
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="heroSection">
+        <div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+        <div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+
         <div class="container">
             <div class="hero-content">
                 <h1>Buy More, Save More!</h1>
@@ -294,6 +297,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Sale Filters -->
     <section class="sale-filters">
@@ -787,33 +791,6 @@
             <p>&copy; 2025 Koskii All Rights Reserved. | Powered by Premium Fashion</p>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
