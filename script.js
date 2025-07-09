@@ -230,41 +230,101 @@ console.log('Koskii website loaded successfully!');
 
 
 
-   const heroSection = document.getElementById("heroSection");
 
-  const images = [
-      "images/slide1.png",
-      "images/slide2.png",
-      "images/slide3.png",
-      "images/slide4.png"
-  ];
 
-  let currentSlide = 0;
-  let autoSlideInterval = null;
 
-  function setBackgroundImage(index) {
-      heroSection.style.backgroundImage = `url('${images[index]}')`;
-  }
 
-  function changeSlide(direction) {
-      currentSlide = (currentSlide + direction + images.length) % images.length;
-      setBackgroundImage(currentSlide);
-      resetAutoSlide();
-  }
 
-  function autoSlide() {
-      currentSlide = (currentSlide + 1) % images.length;
-      setBackgroundImage(currentSlide);
-  }
 
-  function resetAutoSlide() {
-      clearInterval(autoSlideInterval);
-      autoSlideInterval = setInterval(autoSlide, 2000);
-  }
 
-  // Start after DOM is ready
-  window.addEventListener("DOMContentLoaded", () => {
-      setBackgroundImage(currentSlide);
-      autoSlideInterval = setInterval(autoSlide, 3000);
-  });
 
+
+
+
+
+
+
+
+const heroSection = document.getElementById("heroSection");
+
+const images = [
+    "images/slide_img/slide1.png",
+    "images/slide_img/slide2.png",
+    "images/slide_img/slide3.png",
+    "images/slide_img/slide4.png"
+];
+
+let currentSlide = 0;
+let autoSlideInterval = null;
+
+function setBackgroundImage(index) {
+    heroSection.style.backgroundImage = `url('${images[index]}')`;
+}
+
+function changeSlide(direction) {
+    currentSlide = (currentSlide + direction + images.length) % images.length;
+    setBackgroundImage(currentSlide);
+    resetAutoSlide();
+}
+
+function autoSlide() {
+    currentSlide = (currentSlide + 1) % images.length;
+    setBackgroundImage(currentSlide);
+}
+
+function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(autoSlide, 2000);
+}
+
+// Start after DOM is ready
+window.addEventListener("DOMContentLoaded", () => {
+    setBackgroundImage(currentSlide);
+    autoSlideInterval = setInterval(autoSlide, 3000);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const slides = document.querySelectorAll(".slider-image");
+const dots = document.querySelectorAll(".dot");
+let currentSlide2 = 0;
+let slideInterval = setInterval(nextSlide, 3000);
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+        dots[i].classList.toggle("active", i === index);
+    });
+    currentSlide2 = index;
+}
+
+function nextSlide() {
+    const next = (currentSlide2 + 1) % slides.length;
+    showSlide(next);
+}
+
+function goToSlide(index) {
+    showSlide(index);
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 4000);
+}
