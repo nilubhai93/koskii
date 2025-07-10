@@ -302,29 +302,95 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
+const slides = document.querySelectorAll('.slider-image');
+    const dots = document.querySelectorAll('.dot');
+    let currentSlide2 = 0;
+    let slideInterval = setInterval(nextSlide, 3000); // 3 seconds
+
+    function goToSlide(index) {
+      slides[currentSlide2].classList.remove('active');
+      dots[currentSlide2].classList.remove('active');
+      currentSlide2 = index;
+      slides[currentSlide2].classList.add('active');
+      dots[currentSlide2].classList.add('active');
+
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 3000);
+    }
+
+    function nextSlide() {
+      let next = (currentSlide2 + 1) % slides.length;
+      goToSlide(next);
+    }
 
 
 
-const slides = document.querySelectorAll(".slider-image");
-const dots = document.querySelectorAll(".dot");
-let currentSlide2 = 0;
-let slideInterval = setInterval(nextSlide, 3000);
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
-        dots[i].classList.toggle("active", i === index);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // navigation
+     // Positioning popup menu
+    document.addEventListener('DOMContentLoaded', function () {
+      const navItems = document.querySelectorAll('.nav-links > li');
+
+      navItems.forEach(item => {
+        const popup = item.querySelector('.popup-menu');
+        let hideTimeout;
+
+        item.addEventListener('mouseenter', function () {
+          clearTimeout(hideTimeout);
+          if (popup) {
+            positionPopup(item, popup);
+            popup.classList.add('show');
+          }
+        });
+
+        item.addEventListener('mouseleave', function () {
+          if (popup) {
+            hideTimeout = setTimeout(() => {
+              popup.classList.remove('show');
+            }, 100);
+          }
+        });
+
+        if (popup) {
+          popup.addEventListener('mouseenter', function () {
+            clearTimeout(hideTimeout);
+            popup.classList.add('show');
+          });
+
+          popup.addEventListener('mouseleave', function () {
+            popup.classList.remove('show');
+          });
+        }
+      });
+
+      function positionPopup(item, popup) {
+        const rect = item.getBoundingClientRect();
+        const popupRect = popup.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+
+        let left = rect.left + rect.width / 2 - popupRect.width / 2;
+
+        if (left < 10) {
+          left = 10;
+        } else if (left + popupRect.width > viewportWidth - 10) {
+          left = viewportWidth - popupRect.width - 10;
+        }
+
+        popup.style.left = left + 'px';
+        popup.style.top = rect.bottom + 5 + 'px';
+      }
     });
-    currentSlide2 = index;
-}
-
-function nextSlide() {
-    const next = (currentSlide2 + 1) % slides.length;
-    showSlide(next);
-}
-
-function goToSlide(index) {
-    showSlide(index);
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, 4000);
-}
